@@ -22,7 +22,27 @@
             document.getElementById("text1").innerHTML = "I'm having fun!";
         }
     </script>
-
     </div>
+
+    <!-- Lesson 2: -->
+     <div class="Lesson">
+        <h2>Lesson 2: Show text on Page</h2>
+
+        <h2 id="heading2">Text Will Change</h2>
+        <p id="text2">More Text Here</p>
+        <button onclick="lesson2()">Use Variables</button>
+
+        <script>
+            function lesson2() {
+                var message1 = "Hello Everyone!";
+                var message2 = "I Love Javascript!";
+                var message3 = "It's Awesome!";
+
+                document.getElementById("heading2").innerHTML = message1;
+                document.getElementById("text2").innerHTML = message2 + " " + message3;
+            }
+        </script>
+
+     </div>
 </body>
 </html>
