@@ -87,9 +87,50 @@
         <h3>Lesson:5 Click Events</h3>
         <h2 onclick="this.innerHTML='Is Awesome!'">Javascript</h2>
         <p>Click on the word "Javascript" above.</p>
-     </div>
 
      </div>
+
+     <!-- Lesson 6: -->
+      <div class="Lesson" >
+        <h3>Lesson 6: Toggle Functions</h3>
+        <h2 id="Toggle" onclick="ToogleText()">Javascript</h2>
+        <p>Click repeatedly to toggle</p>
+
+        <script>
+            function ToogleText() {
+                var Toggle =document.getElementById("Toggle");
+                if (Toggle.innerHTML == "Javascript") {
+                    Toggle.innerHTML = "Is Awesome!";
+                } else {
+                    Toggle.innerHTML = "Javascript";
+                }
+            }
+        </script>
+        
+      </div>
+
+      <!-- Lesson 7: -->
+       <div class="Lesson">
+        <h2>Lesson: 7 Function Parameters</h2>
+        <p><Strong>Concept:</Strong> Passing Data Into Functions</p>
+
+        <button onclick="addNumbers(10,7)">Add 10 + 7</button>
+        <button onclick="addNumbers(25,18)">Add 25 + 18</button>
+        <button onclick="addNumbers(1245,562)">Add 1245 + 562</button>
+        <div class="output" id="addition7">Result will show here.</div>
+
+        <script>
+            function addNumbers(num1,num2) {
+              document.getElementById("addition7").innerHTML = num1 + "+" + num2 + "=" + (num1 + num2);
+            }
+        </script>
+       </div>
+
+       <!-- Lesson 8: -->
+       <div class="Lesson">
+        <h2></h2>
+
+       </div>
        
 </body>
 </html>
