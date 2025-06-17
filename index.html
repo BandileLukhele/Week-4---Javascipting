@@ -226,13 +226,51 @@
             else {
                 document.getElementById("message11").innerHTML = "Incorrect username or password. Please try again.";
             }
+        }
+    </script>
+</div>
 
-        
+<!--Lesson 12-->
+<div class="Lesson">
+    <h2>Lesson 12: The SWITCH statement</h2>
+    <p><strong>Concept:</strong>Using SWITCH Statements for multiple conditions</p>
+
+    <label for="weather12">Select weather.</label>
+    <select id="weather12">
+       <option value="">Choose weather...</option>
+       <option value="Sunny">Sunny</option>
+       <option value="Windy">Windy</option>
+       <option value="Rainy">Rainy</option>
+       <option value="Snowy">Snowy</option>
+    </select>
+    <button onclick="getWeatherAdvice()">Get Advice</button>
+    <div class="output" id="advice12">Select Weather and Click for advice</div>
+
+    <script>
+        function getWeatherAdvice() {
+            var weatherSelected = document.getElementById("weather12").value;
+            let advice;
+            switch (weatherSelected) {
+                case "Sunny":
+                    advice = "Wear sunglasses and sunscreen!";
+                    break;
+                case "Windy":
+                    advice = "Wear jacket and secure loose items!";
+                    break;
+                case "Rainy":
+                    advice = "Don't forget an umbrella!";
+                    break;
+                case "Snowy":
+                    advice = "Bundle up and wear warm boots!";
+                    break;
+                default:
+                    advice = "Please select a weather condition.";
+            }
+            document.getElementById("advice12").innerHTML = advice;
         }
     </script>
 
-</div>
-        </div> 
+    </div> 
 </body>
 
 </html>
